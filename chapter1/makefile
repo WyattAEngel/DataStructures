@@ -3,7 +3,7 @@ makefile:
 all: recursive
 
 clean: 
-	~rm recursivesample.o recursive.exe recursive
+	-rm recursivesample.o recursive
 	
 recursive: recursivesample.o
 	g++ -g -o recursive recursivesample.o
